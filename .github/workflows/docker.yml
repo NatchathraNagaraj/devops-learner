@@ -23,4 +23,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: natchathra14/nginx-webchange:latest
+          tags: |
+            natchathra14/nginx-webchange:latest
+            natchathra14/nginx-webchange:${{ github.sha }}
